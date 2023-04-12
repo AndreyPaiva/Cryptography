@@ -11,15 +11,6 @@ def generate_random_hill_key():
         key = generate_random_hill_key()    
     return key
 
-def remove_spaces(plaintext):
-    plaintext = plaintext.split()
-    auxiliar = ""
-
-    for i in range(len(plaintext)):
-        auxiliar += plaintext[i]
-    
-    return auxiliar
-
 def hill_encrypt(key, plaintext):
     ciphertext = ""
     
